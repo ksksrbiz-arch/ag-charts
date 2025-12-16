@@ -187,6 +187,12 @@ jobs:
               env:
                   DEFAULT_BRANCH: latest
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  VALIDATE_ALL_CODEBASE: false
+                  VALIDATE_JAVASCRIPT_ES: true
+                  VALIDATE_TYPESCRIPT_ES: true
+                  VALIDATE_YAML: true
+                  VALIDATE_JSON: true
+                  VALIDATE_MARKDOWN: true
 
     generate:
         runs-on: ubuntu-24.04
