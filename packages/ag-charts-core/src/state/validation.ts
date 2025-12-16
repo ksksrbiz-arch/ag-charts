@@ -444,11 +444,11 @@ export const stringLength = (minLength: number, maxLength = Infinity) => {
     if (maxLength === Infinity) {
         message = `a string of at least ${minLength} characters`;
     } else if (minLength === maxLength) {
-        message = `an string of exactly ${minLength} characters`;
+        message = `a string of exactly ${minLength} characters`;
     } else if (minLength === 0) {
-        message = `an string of no more than ${maxLength} characters`;
+        message = `a string of no more than ${maxLength} characters`;
     } else {
-        message = `an string of at least ${minLength} and no more than ${maxLength} characters`;
+        message = `a string of at least ${minLength} and no more than ${maxLength} characters`;
     }
     return attachDescription(
         (value) => isString(value) && value.length >= minLength && value.length <= maxLength,
